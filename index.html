@@ -853,13 +853,10 @@
       btn.disabled = true;
       btn.textContent = 'Joining...';
       try {
-        const res = await fetch('https://api.kit.com/v4/forms/9105185/subscribers', {
+        const res = await fetch('/.netlify/functions/subscribe', {
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'X-Kit-Api-Key': 'kit_0819f888a3d66f97223d0c1873869f6b'
-          },
-          body: JSON.stringify({ email_address: email })
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email })
         });
         if (!res.ok) throw new Error('Request failed');
         form.style.display = 'none';
