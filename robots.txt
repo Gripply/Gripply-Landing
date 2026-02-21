@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gripply.app/sitemap.xml
