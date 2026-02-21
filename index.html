@@ -217,19 +217,6 @@
       animation: orbDrift2 12s ease-in-out infinite reverse;
     }
 
-    /* Grid lines overlay with fade at edges */
-    .hero-grid {
-      position: absolute;
-      inset: 0;
-      background-image:
-        linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
-      background-size: 48px 48px;
-      pointer-events: none;
-      mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, black 30%, transparent 80%);
-      -webkit-mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, black 30%, transparent 80%);
-    }
-
     /* Noise texture overlay */
     .hero-noise {
       position: absolute;
@@ -701,7 +688,6 @@
     <div class="hero-glow"></div>
     <div class="hero-noise"></div>
     <div class="hero-orb-extra"></div>
-    <div class="hero-grid"></div>
     <div class="hero-content">
       <h1>Break Free<br>from Debt with<br><span>Gripply.</span></h1>
       <p>Debt observability, smart planning, and AI-driven insights to clear your debt faster and reclaim your financial future.</p>
