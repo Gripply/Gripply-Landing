@@ -22,6 +22,19 @@
     "offers": { "@type": "Offer", "price": "0" }
   }
   </script>
+  <script>
+    const favicon = document.createElement('link');
+    favicon.rel = 'icon';
+    favicon.type = 'image/png';
+    favicon.href = document.querySelector('.logo img').src;
+    document.head.appendChild(favicon);
+    
+    // Apple devices
+    const apple = document.createElement('link');
+    apple.rel = 'apple-touch-icon';
+    apple.href = favicon.href;
+    document.head.appendChild(apple);
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gripply – Get a Grip on Your Debt</title>
