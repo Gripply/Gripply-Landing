@@ -17,18 +17,33 @@ exports.handler = async (event) => {
   const apiKey = process.env.KIT_API_KEY;
   const formId = process.env.KIT_FORM_ID;
 
-  const res = await fetch(`https://api.kit.com/v4/forms/${formId}/subscribers`, {
+  // Step 1: Create/upsert the subscriber, get back their ID
+  const createRes = await fetch('https://api.kit.com/v4/subscribers', {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'X-Kit-Api-Key': apiKey,
-    },
+    headers: { 'Content-Type': 'application/json', 'X-Kit-Api-Key': apiKey },
     body: JSON.stringify({ email_address: email }),
   });
 
-  if (!res.ok) {
-    const body = await res.text();
-    return { statusCode: res.status, body };
+  if (!createRes.ok) {
+    const body = await createRes.text();
+    return { statusCode: createRes.status, body };
+  }
+
+  const { subscriber } = await createRes.json();
+
+  // Step 2: Add that subscriber to the waitlist form
+  const addRes = await fetch(
+    `https://api.kit.com/v4/forms/${formId}/subscribers/${subscriber.id}`,
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'X-Kit-Api-Key': apiKey },
+      body: JSON.stringify({ referrer: 'https://gripply.app' }),
+    }
+  );
+
+  if (!addRes.ok) {
+    const body = await addRes.text();
+    return { statusCode: addRes.status, body };
   }
 
   return { statusCode: 200, body: JSON.stringify({ success: true }) };
