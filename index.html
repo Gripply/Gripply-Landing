@@ -84,9 +84,23 @@
       [style*="padding:64px 40px 40px"] { padding: 48px 22px 32px !important; }
       [style*="padding:16px 40px"]      { padding: 14px 22px !important; }
     }
-    @media (max-width: 600px) {
+    @media (max-width: 640px) {
       nav a[href="#how"], nav a[href="#features"], nav a[href="#faq"] { display: none !important; }
       h1[style*="clamp(56px,7vw,104px)"] { font-size: 52px !important; }
+      /* stack the signup forms so the submit button can't be pushed off-screen */
+      form[style*="display:flex;gap:10px;max-width:480px"] { flex-direction: column !important; }
+      form[style*="display:flex;gap:10px;max-width:480px"] input[type="email"],
+      form[style*="display:flex;gap:10px;max-width:480px"] button { width: 100% !important; }
+      form[style*="display:flex;gap:10px;max-width:480px"] button { justify-content: center !important; }
+      /* let the fixed-width demo cards shrink to fit the viewport */
+      [style*="width:380px"] { width: 100% !important; max-width: 380px !important; }
+      /* straighten the phone mockup and drop its floating card so nothing is clipped */
+      [style*="transform:rotate(-6deg)"] { transform: none !important; }
+      [style*="left:-44px;bottom:40px"] { display: none !important; }
+    }
+    /* final guard: never allow horizontal overflow on small screens */
+    @media (max-width: 640px) {
+      html, body { overflow-x: hidden !important; }
     }
   </style>
 </head>
