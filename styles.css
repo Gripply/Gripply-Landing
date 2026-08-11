@@ -798,6 +798,7 @@ input, button, textarea, select { box-sizing: border-box; font-family: inherit; 
   html, body { overflow-x: hidden; }
   .nav__link { display: none; }
   .nav-menu { display: block; }
+  .nav__links { gap: 14px; }
   .hero__title { font-size: 52px; }
   .waitlist-form { flex-direction: column; }
   .waitlist-form .waitlist-form__input,
