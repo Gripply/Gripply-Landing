@@ -6,95 +6,82 @@
   <title>Everything Gripply does — Gripply</title>
   <meta name="description" content="The full tour of Gripply: missed-call text-back, captured commitments, quote and money tracking, AI daily brief, one timeline per client, a smart diary, and more." />
   <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://gripply.app/features" />
+  <meta name="theme-color" content="#0b0b0d" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Crect width='256' height='256' rx='56' fill='%230b0b0d'/%3E%3Cpath d='M 128 56 C 168 56 200 88 200 128 C 200 168 168 200 128 200 L 80 216 L 88 184 C 68 172 56 152 56 128 C 56 88 88 56 128 56 Z' fill='none' stroke='%23f5f5f7' stroke-width='20' stroke-linejoin='round'/%3E%3Ccircle cx='160' cy='128' r='14' fill='%23a3e635'/%3E%3C/svg%3E" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Crect width='256' height='256' rx='56' fill='%230b0b0d'/%3E%3Cpath d='M 128 56 C 168 56 200 88 200 128 C 200 168 168 200 128 200 L 80 216 L 88 184 C 68 172 56 152 56 128 C 56 88 88 56 128 56 Z' fill='none' stroke='%23f5f5f7' stroke-width='20' stroke-linejoin='round'/%3E%3Ccircle cx='160' cy='128' r='14' fill='%23a3e635'/%3E%3C/svg%3E" />
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HP2X1SG19H"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-HP2X1SG19H');
-  </script>
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://gripply.app/features" />
+  <meta property="og:title" content="Everything Gripply does — Gripply" />
+  <meta property="og:description" content="The full tour of Gripply: missed-call text-back, captured commitments, quote and money tracking, AI daily brief, one timeline per client, a smart diary, and more." />
+  <meta property="og:image" content="https://gripply.app/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Gripply — More jobs. Less admin. One business number for calls, SMS and WhatsApp." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Everything Gripply does — Gripply" />
+  <meta name="twitter:description" content="The full tour of Gripply: missed-call text-back, captured commitments, quote and money tracking, AI daily brief, and more." />
+  <meta name="twitter:image" content="https://gripply.app/og-image.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-
-  <style>
-    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
-    body { margin: 0; background: #0b0b0d; -webkit-font-smoothing: antialiased; }
-    ::selection { background: #a3e635; color: #0b0b0d; }
-    input::placeholder { color: #6e6e76; }
-    input, button, textarea, select { box-sizing: border-box; font-family: inherit; }
-    .hv:hover { color: #f5f5f7 !important; }
-    .hvb:hover { background: #b6f24d !important; }
-    .fc:focus { border-color: #a3e635 !important; }
-
-    /* responsive — the design is authored at 1200px; collapse multi-column layouts on small screens */
-    @media (max-width: 900px) {
-      [style*="grid-template-columns:repeat(3,1fr)"] { grid-template-columns: 1fr !important; }
-      [style*="grid-template-columns:1fr 1fr"]       { grid-template-columns: 1fr !important; gap: 40px !important; }
-      [style*="padding:72px 40px 40px"]  { padding: 44px 22px 28px !important; }
-      [style*="padding:40px 40px 104px"] { padding: 28px 22px 64px !important; }
-      [style*="padding:72px 56px"] { padding: 44px 26px !important; }
-      [style*="padding:0 40px 104px"] { padding: 0 22px 64px !important; }
-      [style*="padding:16px 40px"]      { padding: 14px 22px !important; }
-      [style*="padding:64px 40px 40px"] { padding: 48px 22px 32px !important; }
-    }
-    @media (max-width: 640px) {
-      nav a[href="/#how"], nav a[href="/#faq"] { display: none !important; }
-      /* stack the signup form so the submit button can't be pushed off-screen */
-      form[style*="display:flex;gap:10px;max-width:480px"] { flex-direction: column !important; }
-      form[style*="display:flex;gap:10px;max-width:480px"] input[type="email"],
-      form[style*="display:flex;gap:10px;max-width:480px"] button { width: 100% !important; height: 56px !important; flex: none !important; }
-      form[style*="display:flex;gap:10px;max-width:480px"] button { justify-content: center !important; }
-      /* let the fixed-width demo cards shrink to fit the viewport */
-      [style*="width:380px"] { width: 100% !important; max-width: 380px !important; }
-    }
-    /* final guard: never allow horizontal overflow on small screens */
-    @media (max-width: 640px) {
-      html, body { overflow-x: hidden !important; }
-    }
-  </style>
+  <link rel="stylesheet" href="/styles.css?v=1">
+  <script src="/consent.js?v=1" defer></script>
+  <script src="/site.js?v=1" defer></script>
 </head>
 <body>
-<div style="background:#0b0b0d;font-family:'Space Grotesk',system-ui,sans-serif;color:#f5f5f7;overflow-x:hidden;">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="page">
 
   <!-- ===================== NAV ===================== -->
-  <nav style="position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:rgba(11,11,13,0.72);border-bottom:1px solid rgba(255,255,255,0.06);">
-    <div style="max-width:1200px;margin:0 auto;padding:16px 40px;display:flex;align-items:center;justify-content:space-between;">
-      <a href="/" style="display:flex;align-items:center;gap:9px;text-decoration:none;">
-        <svg width="26" height="26" viewBox="0 0 256 256" fill="none"><path d="M 128 56 C 168 56 200 88 200 128 C 200 168 168 200 128 200 L 80 216 L 88 184 C 68 172 56 152 56 128 C 56 88 88 56 128 56 Z" stroke="#f5f5f7" stroke-width="20" stroke-linejoin="round"></path><circle cx="160" cy="128" r="13" fill="#a3e635"></circle></svg>
-        <span style="font-size:19px;font-weight:700;color:#f5f5f7;letter-spacing:-0.5px;">Gripply</span>
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">
+        <svg aria-hidden="true" width="26" height="26" viewBox="0 0 256 256" fill="none"><path d="M 128 56 C 168 56 200 88 200 128 C 200 168 168 200 128 200 L 80 216 L 88 184 C 68 172 56 152 56 128 C 56 88 88 56 128 56 Z" stroke="#f5f5f7" stroke-width="20" stroke-linejoin="round"></path><circle cx="160" cy="128" r="13" fill="#a3e635"></circle></svg>
+        <span>Gripply</span>
       </a>
-      <div style="display:flex;align-items:center;gap:34px;">
-        <a href="/#how" style="font-size:14px;color:#9b9ba1;text-decoration:none;" class="hv">How it works</a>
-        <a href="/#faq" style="font-size:14px;color:#9b9ba1;text-decoration:none;" class="hv">FAQ</a>
-        <a href="/#waitlist" style="background:#a3e635;border-radius:10px;padding:10px 18px;font-size:14px;font-weight:600;color:#0b0b0d;text-decoration:none;" class="hvb">Join the waitlist</a>
+      <div class="nav__links">
+        <a href="/#how" class="nav__link">How it works</a>
+        <a href="/features" class="nav__link" aria-current="page">Features</a>
+        <a href="/#faq" class="nav__link">FAQ</a>
+        <a href="#waitlist" class="btn btn--primary nav__cta">Join the waitlist</a>
+        <details class="nav-menu">
+          <summary class="nav-menu__button" aria-label="Menu">
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="17" x2="20" y2="17"></line></svg>
+          </summary>
+          <div class="nav-menu__panel">
+            <a class="nav-menu__link" href="/#how">How it works</a>
+            <a class="nav-menu__link" href="/features" aria-current="page">Features</a>
+            <a class="nav-menu__link" href="/#faq">FAQ</a>
+            <a class="nav-menu__link" href="#waitlist">Join the waitlist</a>
+          </div>
+        </details>
       </div>
     </div>
   </nav>
 
   <!-- ===================== PAGE HEADER ===================== -->
-  <header style="max-width:1200px;margin:0 auto;padding:72px 40px 40px;">
-    <div style="font-family:'Space Mono',monospace;font-size:12px;font-weight:700;color:#a3e635;letter-spacing:1.4px;text-transform:uppercase;margin-bottom:16px;">The full tour</div>
-    <h1 style="font-size:clamp(38px,5vw,64px);line-height:1.0;font-weight:700;letter-spacing:-2px;margin:0 0 18px;max-width:720px;">Everything Gripply does.</h1>
-    <p style="font-size:18px;line-height:1.55;color:#9b9ba1;margin:0;max-width:560px;">One business number for calls, SMS and WhatsApp — and everything Gripply catches, tracks and chases on the back of it.</p>
+  <header id="main" class="page-header">
+    <div class="kicker">The full tour</div>
+    <h1>Everything Gripply does.</h1>
+    <p class="page-header__sub">One business number for calls, SMS and WhatsApp — and everything Gripply catches, tracks and chases on the back of it.</p>
   </header>
 
   <!-- ===================== FEATURES ===================== -->
-  <section style="max-width:1200px;margin:0 auto;padding:40px 40px 104px;">
+  <section class="features-section">
 
       <!-- feature row 1 -->
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-bottom:88px;">
-        <div>
-          <div style="display:inline-flex;align-items:center;gap:7px;padding:6px 11px;background:rgba(163,230,53,0.1);border-radius:8px;margin-bottom:18px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg><span style="font-size:11px;font-weight:600;color:#a3e635;letter-spacing:0.5px;text-transform:uppercase;">Missed-call text-back</span></div>
-          <h3 style="font-size:30px;font-weight:700;letter-spacing:-0.8px;margin:0 0 14px;color:#f5f5f7;">Miss the call. Keep the job.</h3>
-          <p style="font-size:16px;line-height:1.6;color:#9b9ba1;margin:0;max-width:440px;">When you can't pick up, Gripply texts the caller back straight away — so they wait for you instead of ringing the next number on the list. Every missed call is flagged for a callback, and Gripply shows you what the ones that got away are worth.</p>
+      <div class="feature-row">
+        <div class="feature-row__copy">
+          <div class="feature-pill"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg><span>Missed-call text-back</span></div>
+          <h3 class="feature-title">Miss the call. Keep the job.</h3>
+          <p class="feature-text">When you can't pick up, Gripply texts the caller back straight away — so they wait for you instead of ringing the next number on the list. Every missed call is flagged for a callback, and Gripply shows you what the ones that got away are worth.</p>
         </div>
-        <div style="display:flex;justify-content:center;">
-          <div style="width:380px;background:#16161a;border:1px solid rgba(255,255,255,0.06);border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:12px;">
+        <div class="feature-row__media" aria-hidden="true">
+          <div class="demo-card demo-card--col">
             <!-- missed call row -->
             <div style="display:flex;align-items:center;gap:10px;padding-bottom:13px;border-bottom:1px solid rgba(255,255,255,0.06);">
               <div style="width:34px;height:34px;border-radius:17px;background:hsl(280,30%,24%);display:flex;align-items:center;justify-content:center;flex:none;"><span style="color:hsl(280,70%,74%);font-size:12px;font-weight:600;">MW</span></div>
@@ -112,9 +99,9 @@
       </div>
 
       <!-- feature row 2 (reversed) -->
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-bottom:88px;">
-        <div style="display:flex;justify-content:center;order:1;">
-          <div style="width:380px;background:#16161a;border:1px solid rgba(255,255,255,0.06);border-radius:18px;padding:18px;">
+      <div class="feature-row feature-row--reversed">
+        <div class="feature-row__media" aria-hidden="true">
+          <div class="demo-card">
             <div style="font-family:'Space Mono',monospace;font-size:10px;font-weight:700;color:#6e6e76;letter-spacing:0.8px;text-transform:uppercase;padding:4px 4px 12px;">Captured commitments</div>
             <!-- item overdue -->
             <div style="display:flex;align-items:flex-start;gap:11px;padding:13px;background:rgba(255,93,93,0.04);border:1px solid rgba(255,93,93,0.18);border-radius:12px;margin-bottom:9px;">
@@ -133,22 +120,22 @@
             </div>
           </div>
         </div>
-        <div style="order:2;">
-          <div style="display:inline-flex;align-items:center;gap:7px;padding:6px 11px;background:rgba(163,230,53,0.1);border-radius:8px;margin-bottom:18px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2.2"><polyline points="20 6 9 17 4 12"></polyline></svg><span style="font-size:11px;font-weight:600;color:#a3e635;letter-spacing:0.5px;text-transform:uppercase;">Captured commitments</span></div>
-          <h3 style="font-size:30px;font-weight:700;letter-spacing:-0.8px;margin:0 0 14px;color:#f5f5f7;">Every promise becomes a tracked action.</h3>
-          <p style="font-size:16px;line-height:1.6;color:#9b9ba1;margin:0;max-width:440px;">Appointments, quotes, requirements, callbacks — whatever you agreed on a call or in a message, Gripply pulls it out automatically and keeps it in front of you until it's handled. No more forgotten promises.</p>
+        <div class="feature-row__copy">
+          <div class="feature-pill"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2.2"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Captured commitments</span></div>
+          <h3 class="feature-title">Every promise becomes a tracked action.</h3>
+          <p class="feature-text">Appointments, quotes, requirements, callbacks — whatever you agreed on a call or in a message, Gripply pulls it out automatically and keeps it in front of you until it's handled. No more forgotten promises.</p>
         </div>
       </div>
 
       <!-- feature row 3 -->
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-bottom:88px;">
-        <div>
-          <div style="display:inline-flex;align-items:center;gap:7px;padding:6px 11px;background:rgba(163,230,53,0.1);border-radius:8px;margin-bottom:18px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg><span style="font-size:11px;font-weight:600;color:#a3e635;letter-spacing:0.5px;text-transform:uppercase;">Quotes &amp; money</span></div>
-          <h3 style="font-size:30px;font-weight:700;letter-spacing:-0.8px;margin:0 0 14px;color:#f5f5f7;">Chase the quote before it goes cold.</h3>
-          <p style="font-size:16px;line-height:1.6;color:#9b9ba1;margin:0;max-width:440px;">Gripply keeps a running tally of the quotes you've sent and the money you're owed, and nudges you when one's gone quiet. And when a job wraps up, it prompts you to ask the customer for a review — while the work's still fresh in their mind.</p>
+      <div class="feature-row">
+        <div class="feature-row__copy">
+          <div class="feature-pill"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg><span>Quotes &amp; money</span></div>
+          <h3 class="feature-title">Chase the quote before it goes cold.</h3>
+          <p class="feature-text">Gripply keeps a running tally of the quotes you've sent and the money you're owed, and nudges you when one's gone quiet. And when a job wraps up, it prompts you to ask the customer for a review — while the work's still fresh in their mind.</p>
         </div>
-        <div style="display:flex;justify-content:center;">
-          <div style="width:380px;background:#16161a;border:1px solid rgba(255,255,255,0.06);border-radius:18px;padding:18px;">
+        <div class="feature-row__media" aria-hidden="true">
+          <div class="demo-card">
             <div style="display:flex;align-items:baseline;justify-content:space-between;padding:4px 4px 12px;">
               <span style="font-family:'Space Mono',monospace;font-size:10px;font-weight:700;color:#6e6e76;letter-spacing:0.8px;text-transform:uppercase;">Money owed</span>
               <span style="font-size:20px;font-weight:700;color:#a3e635;letter-spacing:-0.5px;">£2,350</span>
@@ -169,31 +156,31 @@
       </div>
 
       <!-- feature row 4 (reversed) -->
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-bottom:88px;">
-        <div style="display:flex;justify-content:center;order:1;">
-          <div style="width:380px;background:#16161a;border:1px solid rgba(255,255,255,0.06);border-radius:18px;padding:20px;position:relative;overflow:hidden;">
+      <div class="feature-row feature-row--reversed">
+        <div class="feature-row__media" aria-hidden="true">
+          <div class="demo-card" style="padding:20px;position:relative;overflow:hidden;">
             <div style="position:absolute;top:-30px;right:-30px;width:140px;height:140px;background:radial-gradient(circle,rgba(163,230,53,0.14),rgba(163,230,53,0) 70%);"></div>
             <div style="display:flex;align-items:center;gap:6px;margin-bottom:12px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2"><path d="M12 3l1.9 5.8L19.5 9l-4.6 3.4L16.5 18 12 14.6 7.5 18l1.6-5.6L4.5 9l5.6-.2z"></path></svg><span style="font-size:10px;font-weight:600;color:#a3e635;letter-spacing:0.5px;text-transform:uppercase;">Daily brief · 7:30 AM</span></div>
             <div style="font-size:16px;line-height:23px;color:#9b9ba1;"><span style="color:#f5f5f7;font-weight:500;">3 callbacks need you this morning.</span> Two quotes are overdue, and the Henderson bathroom job is confirmed for Thursday at 9am.</div>
             <div style="display:flex;gap:8px;margin-top:18px;"><div style="flex:1;text-align:center;background:#a3e635;border-radius:10px;padding:11px;font-size:13px;font-weight:600;color:#0b0b0d;">Start morning</div><div style="background:#1e1e23;border:1px solid rgba(255,255,255,0.06);border-radius:10px;padding:11px 16px;font-size:13px;font-weight:500;color:#f5f5f7;">Read all</div></div>
           </div>
         </div>
-        <div style="order:2;">
-          <div style="display:inline-flex;align-items:center;gap:7px;padding:6px 11px;background:rgba(163,230,53,0.1);border-radius:8px;margin-bottom:18px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2"><path d="M12 3l1.9 5.8L19.5 9l-4.6 3.4L16.5 18 12 14.6 7.5 18l1.6-5.6L4.5 9l5.6-.2z"></path></svg><span style="font-size:11px;font-weight:600;color:#a3e635;letter-spacing:0.5px;text-transform:uppercase;">AI daily brief</span></div>
-          <h3 style="font-size:30px;font-weight:700;letter-spacing:-0.8px;margin:0 0 14px;color:#f5f5f7;">Wake up knowing exactly what needs you.</h3>
-          <p style="font-size:16px;line-height:1.6;color:#9b9ba1;margin:0;max-width:440px;">Every morning Gripply reads back the previous day's calls and messages and hands you a plain-English brief: who to ring, what's overdue, what's confirmed. Start your day already on top of it.</p>
+        <div class="feature-row__copy">
+          <div class="feature-pill"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2"><path d="M12 3l1.9 5.8L19.5 9l-4.6 3.4L16.5 18 12 14.6 7.5 18l1.6-5.6L4.5 9l5.6-.2z"></path></svg><span>AI daily brief</span></div>
+          <h3 class="feature-title">Wake up knowing exactly what needs you.</h3>
+          <p class="feature-text">Every morning Gripply reads back the previous day's calls and messages and hands you a plain-English brief: who to ring, what's overdue, what's confirmed. Start your day already on top of it.</p>
         </div>
       </div>
 
       <!-- feature row 5 -->
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-bottom:88px;">
-        <div>
-          <div style="display:inline-flex;align-items:center;gap:7px;padding:6px 11px;background:rgba(163,230,53,0.1);border-radius:8px;margin-bottom:18px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg><span style="font-size:11px;font-weight:600;color:#a3e635;letter-spacing:0.5px;text-transform:uppercase;">One timeline</span></div>
-          <h3 style="font-size:30px;font-weight:700;letter-spacing:-0.8px;margin:0 0 14px;color:#f5f5f7;">Calls, SMS and WhatsApp in one thread.</h3>
-          <p style="font-size:16px;line-height:1.6;color:#9b9ba1;margin:0;max-width:440px;">Stop hunting across your phone, your messages and three different apps. Every client gets a single timeline — every word, every channel, every detail, in order. Photos and videos land in the thread, and voice notes arrive transcribed so you can read them on site.</p>
+      <div class="feature-row">
+        <div class="feature-row__copy">
+          <div class="feature-pill"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg><span>One timeline</span></div>
+          <h3 class="feature-title">Calls, SMS and WhatsApp in one thread.</h3>
+          <p class="feature-text">Stop hunting across your phone, your messages and three different apps. Every client gets a single timeline — every word, every channel, every detail, in order. Photos and videos land in the thread, and voice notes arrive transcribed so you can read them on site.</p>
         </div>
-        <div style="display:flex;justify-content:center;">
-          <div style="width:380px;background:#16161a;border:1px solid rgba(255,255,255,0.06);border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:12px;">
+        <div class="feature-row__media" aria-hidden="true">
+          <div class="demo-card demo-card--col">
             <div style="display:flex;align-items:center;gap:9px;padding-bottom:13px;border-bottom:1px solid rgba(255,255,255,0.06);">
               <div style="width:34px;height:34px;border-radius:17px;background:hsl(20,30%,24%);display:flex;align-items:center;justify-content:center;"><span style="color:hsl(20,70%,70%);font-size:12px;font-weight:600;">DH</span></div>
               <div><div style="font-size:13.5px;font-weight:600;color:#f5f5f7;">Dave Henderson</div><div style="font-size:11px;color:#6e6e76;">+44 7700 900 482</div></div>
@@ -218,9 +205,9 @@
       </div>
 
       <!-- feature row 6 (reversed) -->
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-bottom:88px;">
-        <div style="display:flex;justify-content:center;order:1;">
-          <div style="width:380px;background:#16161a;border:1px solid rgba(255,255,255,0.06);border-radius:18px;padding:18px;">
+      <div class="feature-row feature-row--reversed">
+        <div class="feature-row__media" aria-hidden="true">
+          <div class="demo-card">
             <div style="font-family:'Space Mono',monospace;font-size:10px;font-weight:700;color:#6e6e76;letter-spacing:0.8px;text-transform:uppercase;padding:4px 4px 12px;">Thursday · Jun 19</div>
             <div style="display:flex;align-items:center;gap:11px;padding:12px 13px;background:#1e1e23;border:1px solid rgba(163,230,53,0.3);border-radius:12px;margin-bottom:9px;">
               <span style="font-family:'Space Mono',monospace;font-size:11px;color:#a3e635;font-weight:700;flex:none;">9:00</span>
@@ -241,115 +228,86 @@
             </div>
           </div>
         </div>
-        <div style="order:2;">
-          <div style="display:inline-flex;align-items:center;gap:7px;padding:6px 11px;background:rgba(163,230,53,0.1);border-radius:8px;margin-bottom:18px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg><span style="font-size:11px;font-weight:600;color:#a3e635;letter-spacing:0.5px;text-transform:uppercase;">Smart diary</span></div>
-          <h3 style="font-size:30px;font-weight:700;letter-spacing:-0.8px;margin:0 0 14px;color:#f5f5f7;">Book the job while you're still on the phone.</h3>
-          <p style="font-size:16px;line-height:1.6;color:#9b9ba1;margin:0;max-width:440px;">Agree a time and it's in the diary. Gripply shows your free gaps, warns you before you double-book, knows your working days and days off, and keeps the customer in the loop when anything changes.</p>
+        <div class="feature-row__copy">
+          <div class="feature-pill"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg><span>Smart diary</span></div>
+          <h3 class="feature-title">Book the job while you're still on the phone.</h3>
+          <p class="feature-text">Agree a time and it's in the diary. Gripply shows your free gaps, warns you before you double-book, knows your working days and days off, and keeps the customer in the loop when anything changes.</p>
         </div>
       </div>
 
       <!-- also in the box -->
-      <div style="font-family:'Space Mono',monospace;font-size:12px;font-weight:700;color:#6e6e76;letter-spacing:1.4px;text-transform:uppercase;margin-bottom:24px;">Also in the box</div>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;">
-        <div style="background:#16161a;border:1px solid rgba(255,255,255,0.06);border-radius:14px;padding:20px;">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line></svg>
-          <div style="font-size:15.5px;font-weight:600;color:#f5f5f7;letter-spacing:-0.3px;margin:12px 0 6px;">Voice notes, transcribed</div>
-          <p style="font-size:13.5px;line-height:1.55;color:#9b9ba1;margin:0;">Photos and videos land in the thread; voice notes arrive as text you can skim.</p>
+      <div class="kicker kicker--dim">Also in the box</div>
+      <div class="mini-grid">
+        <div class="mini-card">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line></svg>
+          <div class="mini-card__title">Voice notes, transcribed</div>
+          <p>Photos and videos land in the thread; voice notes arrive as text you can skim.</p>
         </div>
-        <div style="background:#16161a;border:1px solid rgba(255,255,255,0.06);border-radius:14px;padding:20px;">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-          <div style="font-size:15.5px;font-weight:600;color:#f5f5f7;letter-spacing:-0.3px;margin:12px 0 6px;">Review requests</div>
-          <p style="font-size:13.5px;line-height:1.55;color:#9b9ba1;margin:0;">Ask for the review while the job's still fresh in the customer's mind.</p>
+        <div class="mini-card">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          <div class="mini-card__title">Review requests</div>
+          <p>Ask for the review while the job's still fresh in the customer's mind.</p>
         </div>
-        <div style="background:#16161a;border:1px solid rgba(255,255,255,0.06);border-radius:14px;padding:20px;">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
-          <div style="font-size:15.5px;font-weight:600;color:#f5f5f7;letter-spacing:-0.3px;margin:12px 0 6px;">iOS &amp; Android</div>
-          <p style="font-size:13.5px;line-height:1.55;color:#9b9ba1;margin:0;">Take and make business-line calls from the app, with a web dashboard for the desk.</p>
+        <div class="mini-card">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+          <div class="mini-card__title">iOS &amp; Android</div>
+          <p>Take and make business-line calls from the app, with a web dashboard for the desk.</p>
         </div>
       </div>
   </section>
 
   <!-- ===================== WAITLIST CTA ===================== -->
-  <section id="waitlist" style="scroll-margin-top:80px;padding:0 40px 104px;">
-    <div style="max-width:1100px;margin:0 auto;position:relative;background:linear-gradient(165deg,#16161a,#0e0e11);border:1px solid rgba(163,230,53,0.18);border-radius:28px;padding:72px 56px;overflow:hidden;">
-      <div style="position:absolute;top:-120px;right:-60px;width:480px;height:480px;background:radial-gradient(circle,rgba(163,230,53,0.16),rgba(163,230,53,0) 70%);pointer-events:none;"></div>
-      <div style="position:relative;max-width:560px;">
-        <div style="font-family:'Space Mono',monospace;font-size:12px;font-weight:700;color:#a3e635;letter-spacing:1.4px;text-transform:uppercase;margin-bottom:18px;">Early access — limited spots</div>
-        <h2 style="font-size:clamp(36px,4.5vw,56px);line-height:0.98;font-weight:700;letter-spacing:-2px;margin:0 0 18px;">Be first on Gripply.</h2>
-        <p style="font-size:18px;line-height:1.55;color:#9b9ba1;margin:0 0 30px;">Join the waitlist and we'll set you up with a dedicated number, transcribed conversations, and tracked actions — all in one place.</p>
+  <section id="waitlist" class="cta-section cta-section--flush">
+    <div class="cta-panel">
+      <div class="cta-panel__glow"></div>
+      <div class="cta-panel__inner">
+        <div class="kicker">Early access — limited spots</div>
+        <h2 class="cta-title">Be first on Gripply.</h2>
+        <p class="cta-sub">Join the waitlist and we'll set you up with a dedicated number, transcribed conversations, and tracked actions — all in one place.</p>
 
-          <form id="finalForm" onsubmit="handleSubmit(event,'final')" style="display:flex;gap:10px;max-width:480px;">
-            <input id="finalEmail" type="email" inputmode="email" autocomplete="email" required placeholder="Enter your email address" style="flex:1;background:#0b0b0d;border:1px solid rgba(255,255,255,0.14);border-radius:12px;padding:0 16px;height:56px;font-size:15px;color:#f5f5f7;font-family:inherit;outline:none;" class="fc">
-            <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;opacity:0;" />
-            <button type="submit" style="display:flex;align-items:center;gap:7px;background:#a3e635;border:none;border-radius:12px;padding:0 24px;height:56px;font-size:15px;font-weight:600;color:#0b0b0d;font-family:inherit;cursor:pointer;white-space:nowrap;" class="hvb">Join the waitlist
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0b0b0d" stroke-width="2.6"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-            </button>
-          </form>
+        <form id="finalForm" class="waitlist-form waitlist-form--deep" data-success="finalSuccess" data-error="finalError" data-location="features">
+          <label class="visually-hidden" for="finalEmail">Email address</label>
+          <input id="finalEmail" name="email" type="email" inputmode="email" autocomplete="email" required placeholder="Enter your email address" class="waitlist-form__input">
+          <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp-field" />
+          <button type="submit" class="btn btn--primary waitlist-form__submit">Join the waitlist
+            <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0b0b0d" stroke-width="2.6"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+        </form>
+        <div id="finalError" class="form-error" role="alert" hidden></div>
 
-          <div id="finalSuccess" style="display:none;align-items:center;gap:11px;max-width:480px;background:rgba(163,230,53,0.1);border:1px solid rgba(163,230,53,0.3);border-radius:12px;padding:17px 18px;">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-            <span style="font-size:14.5px;color:#f5f5f7;font-weight:500;">You're on the list — welcome aboard. We'll email you with what's next.</span>
-          </div>
+        <div id="finalSuccess" class="form-success form-success--deep" role="status" tabindex="-1" hidden>
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          <span>You're on the list — welcome aboard. We'll email you with what's next.</span>
+        </div>
 
-        <div style="display:flex;align-items:center;gap:14px;margin-top:16px;font-size:13px;color:#6e6e76;">
-          <span>We'll only email you about early access</span><span style="color:#2c2c30;">·</span><span>No spam</span><span style="color:#2c2c30;">·</span><span>Unsubscribe anytime</span>
+        <div class="form-note">
+          <span>We'll only email you about early access</span><span class="sep" aria-hidden="true">·</span><span>No spam</span><span class="sep" aria-hidden="true">·</span><span>Unsubscribe anytime</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ===================== FOOTER ===================== -->
-  <footer style="border-top:1px solid rgba(255,255,255,0.06);">
-    <div style="max-width:1200px;margin:0 auto;padding:64px 40px 40px;">
+  <footer class="footer">
+    <div class="footer__top">
       <div>
-        <div style="display:flex;align-items:center;gap:9px;margin-bottom:16px;">
-          <svg width="24" height="24" viewBox="0 0 256 256" fill="none"><path d="M 128 56 C 168 56 200 88 200 128 C 200 168 168 200 128 200 L 80 216 L 88 184 C 68 172 56 152 56 128 C 56 88 88 56 128 56 Z" stroke="#f5f5f7" stroke-width="20" stroke-linejoin="round"></path><circle cx="160" cy="128" r="13" fill="#a3e635"></circle></svg>
-          <span style="font-size:18px;font-weight:700;color:#f5f5f7;letter-spacing:-0.5px;">Gripply</span>
+        <div class="footer__brand">
+          <svg aria-hidden="true" width="24" height="24" viewBox="0 0 256 256" fill="none"><path d="M 128 56 C 168 56 200 88 200 128 C 200 168 168 200 128 200 L 80 216 L 88 184 C 68 172 56 152 56 128 C 56 88 88 56 128 56 Z" stroke="#f5f5f7" stroke-width="20" stroke-linejoin="round"></path><circle cx="160" cy="128" r="13" fill="#a3e635"></circle></svg>
+          <span>Gripply</span>
         </div>
-        <p style="font-size:14px;line-height:1.6;color:#6e6e76;margin:0;max-width:280px;">The business line that catches every call, message and promise — so nothing slips through.</p>
+        <p class="footer__tagline">The business line that catches every call, message and promise — so nothing slips through.</p>
       </div>
     </div>
-    <div style="max-width:1200px;margin:0 auto;padding:24px 40px 48px;border-top:1px solid rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
-      <div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap;">
-        <span style="font-size:13px;color:#6e6e76;">© 2026 Gripply. All rights reserved.</span>
-        <a href="/features" style="font-size:13px;color:#6e6e76;text-decoration:none;" class="hv">All features</a>
-        <a href="/privacy" style="font-size:13px;color:#6e6e76;text-decoration:none;" class="hv">Privacy Policy</a>
+    <div class="footer__bottom">
+      <div class="footer__links">
+        <span class="footer__copy">© 2026 Gripply. All rights reserved.</span>
+        <a href="/features" class="footer__link" aria-current="page">All features</a>
+        <a href="/privacy" class="footer__link">Privacy Policy</a>
+        <button type="button" class="footer__link" data-cookie-choices>Cookie choices</button>
       </div>
-      <span style="font-family:'Space Mono',monospace;font-size:11px;color:#3a3a3f;letter-spacing:0.6px;">MADE FOR PEOPLE WHO RUN ON THEIR PHONE</span>
+      <span class="footer__made">MADE FOR PEOPLE WHO RUN ON THEIR PHONE</span>
     </div>
   </footer>
 </div>
-
-  <script>
-    function handleSubmit(e, which) {
-      e.preventDefault();
-      var form    = document.getElementById('finalForm');
-      var success = document.getElementById('finalSuccess');
-      var emailEl = form.querySelector('input[type="email"]');
-      var email   = (emailEl.value || '').trim();
-      if (!email) return;
-      // honeypot — bots fill hidden fields
-      if (form.querySelector('input[name="website"]').value) return;
-
-      var btn = form.querySelector('button');
-      var original = btn.innerHTML;
-      btn.disabled = true;
-      btn.textContent = 'Joining…';
-
-      fetch('/.netlify/functions/subscribe', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: email })
-      }).then(function (res) {
-        if (!res.ok) throw new Error('Request failed');
-        form.style.display = 'none';
-        success.style.display = 'flex';
-      }).catch(function () {
-        btn.disabled = false;
-        btn.innerHTML = original;
-        alert('Something went wrong — please try again.');
-      });
-    }
-  </script>
 </body>
 </html>
