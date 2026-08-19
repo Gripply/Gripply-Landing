@@ -1,5 +1,5 @@
-/* Gripply landing — shared stylesheet for index/features/privacy.
-   Referenced as /styles.css?v=N — bump N in all three pages when editing
+/* Gripply landing — shared stylesheet for index/features/privacy/terms.
+   Referenced as /styles.css?v=N — bump N in all four pages when editing
    this file (netlify.toml serves it with immutable caching). */
 
 :root {
@@ -418,6 +418,112 @@ input, button, textarea, select { box-sizing: border-box; font-family: inherit; 
   margin: 0;
 }
 
+/* ===== pricing (index) ===== */
+
+.section-pricing {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 104px 40px;
+  scroll-margin-top: 80px;
+  border-top: 1px solid var(--border);
+}
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 880px;
+}
+.price-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 28px;
+}
+.price-card--featured { border-color: rgba(163, 230, 53, 0.4); }
+.price-card__flag {
+  position: absolute;
+  top: -12px;
+  left: 24px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  border-radius: 999px;
+  padding: 4px 10px;
+}
+.price-card__name {
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 12px;
+}
+.price-card__price {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+.price-card__amount {
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  color: var(--text);
+}
+.price-card__per { font-size: 14px; color: var(--dim); }
+.price-card__allowance {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 0;
+  margin-bottom: 16px;
+}
+.price-card__row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--muted);
+}
+.price-card__row strong { color: var(--text); font-weight: 600; }
+.price-card__features {
+  list-style: none;
+  margin: 0 0 24px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.price-card__features li {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 14px;
+  color: var(--muted);
+}
+.price-card__cta {
+  justify-content: center;
+  padding: 14px 22px;
+  margin-top: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+.pricing-note {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--dim);
+  margin: 20px 0 0;
+  max-width: 880px;
+}
+
 /* ===== feature rows (index band + features page) ===== */
 
 .band {
@@ -783,6 +889,8 @@ input, button, textarea, select { box-sizing: border-box; font-family: inherit; 
   .hero__grid { grid-template-columns: 1fr; }
   .section-how { padding: 64px 22px; }
   .steps-grid { grid-template-columns: 1fr; }
+  .section-pricing { padding: 64px 22px; }
+  .pricing-grid { grid-template-columns: 1fr; }
   .band__inner { padding: 64px 22px; }
   .feature-row { grid-template-columns: 1fr; gap: 40px; }
   .cta-section { padding: 64px 22px; }

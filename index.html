@@ -33,14 +33,17 @@
     "description": "One business number for calls, SMS and WhatsApp Business. Gripply transcribes every conversation and tracks every promise so nothing slips through.",
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "Web, iOS, Android",
-    "offers": { "@type": "Offer", "price": "0" }
+    "offers": [
+      { "@type": "Offer", "name": "Starter", "price": "60.00", "priceCurrency": "GBP" },
+      { "@type": "Offer", "name": "Pro", "price": "80.00", "priceCurrency": "GBP" }
+    ]
   }
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=2">
+  <link rel="stylesheet" href="/styles.css?v=3">
   <script src="/consent.js?v=1" defer></script>
   <script src="/site.js?v=1" defer></script>
 </head>
@@ -58,6 +61,7 @@
       <div class="nav__links">
         <a href="#how" class="nav__link">How it works</a>
         <a href="#features" class="nav__link">Features</a>
+        <a href="#pricing" class="nav__link">Pricing</a>
         <a href="#faq" class="nav__link">FAQ</a>
         <a href="#waitlist" class="btn btn--primary nav__cta">Join the waitlist</a>
         <details class="nav-menu">
@@ -67,6 +71,7 @@
           <div class="nav-menu__panel">
             <a class="nav-menu__link" href="#how">How it works</a>
             <a class="nav-menu__link" href="#features">Features</a>
+            <a class="nav-menu__link" href="#pricing">Pricing</a>
             <a class="nav-menu__link" href="#faq">FAQ</a>
             <a class="nav-menu__link" href="#waitlist">Join the waitlist</a>
           </div>
@@ -393,6 +398,61 @@
     </div>
   </section>
 
+  <!-- ===================== PRICING ===================== -->
+  <section id="pricing" class="section-pricing">
+    <div class="kicker">Pricing</div>
+    <h2 class="section-title">Two plans. Every feature on both.</h2>
+
+    <div class="pricing-grid">
+      <!-- Starter -->
+      <div class="price-card">
+        <div class="price-card__name">Starter</div>
+        <div class="price-card__price">
+          <span class="price-card__amount">&pound;60</span>
+          <span class="price-card__per">/month</span>
+        </div>
+        <div class="price-card__allowance">
+          <div class="price-card__row"><span>Call minutes</span><strong>300</strong></div>
+          <div class="price-card__row"><span>SMS</span><strong>300</strong></div>
+        </div>
+        <ul class="price-card__features">
+          <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2.4"><polyline points="20 6 9 17 4 12"></polyline></svg>Dedicated business number</li>
+          <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2.4"><polyline points="20 6 9 17 4 12"></polyline></svg>Call recording &amp; transcription</li>
+          <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2.4"><polyline points="20 6 9 17 4 12"></polyline></svg>Tracked actions from every conversation</li>
+          <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2.4"><polyline points="20 6 9 17 4 12"></polyline></svg>Daily morning brief</li>
+          <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2.4"><polyline points="20 6 9 17 4 12"></polyline></svg>SMS &amp; WhatsApp tracking</li>
+          <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2.4"><polyline points="20 6 9 17 4 12"></polyline></svg>Client management</li>
+        </ul>
+        <a href="#waitlist" class="outline-cta price-card__cta">Join the waitlist</a>
+      </div>
+
+      <!-- Pro -->
+      <div class="price-card price-card--featured">
+        <div class="price-card__flag">Recommended</div>
+        <div class="price-card__name">Pro</div>
+        <div class="price-card__price">
+          <span class="price-card__amount">&pound;80</span>
+          <span class="price-card__per">/month</span>
+        </div>
+        <div class="price-card__allowance">
+          <div class="price-card__row"><span>Call minutes</span><strong>500</strong></div>
+          <div class="price-card__row"><span>SMS</span><strong>500</strong></div>
+        </div>
+        <ul class="price-card__features">
+          <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2.4"><polyline points="20 6 9 17 4 12"></polyline></svg>Dedicated business number</li>
+          <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2.4"><polyline points="20 6 9 17 4 12"></polyline></svg>Call recording &amp; transcription</li>
+          <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2.4"><polyline points="20 6 9 17 4 12"></polyline></svg>Tracked actions from every conversation</li>
+          <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2.4"><polyline points="20 6 9 17 4 12"></polyline></svg>Daily morning brief</li>
+          <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2.4"><polyline points="20 6 9 17 4 12"></polyline></svg>SMS &amp; WhatsApp tracking</li>
+          <li><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a3e635" stroke-width="2.4"><polyline points="20 6 9 17 4 12"></polyline></svg>Client management</li>
+        </ul>
+        <a href="#waitlist" class="btn btn--primary price-card__cta">Join the waitlist</a>
+      </div>
+    </div>
+
+    <p class="pricing-note">Both plans start with a 14-day free trial — no charge until the trial ends, cancel anytime. Go past your included allowance and calls are 12p per minute, texts 6p each, added to your next bill. Prices exclude VAT.</p>
+  </section>
+
   <!-- ===================== WAITLIST CTA ===================== -->
   <section id="waitlist" class="cta-section">
     <div class="cta-panel">
@@ -444,7 +504,7 @@
         </div>
         <div class="faq__row">
           <h3>What does it cost?</h3>
-          <p>We'll share pricing as we roll out early access. Join the waitlist and you'll be first to hear — and lock in early-access pricing when we launch.</p>
+          <p>Two plans: Starter at £60 a month with 300 call minutes and 300 texts included, or Pro at £80 a month with 500 of each. Every feature is on both plans — the only difference is the allowance. Both start with a 14-day free trial, you can cancel anytime, and if you go over your allowance calls are 12p a minute and texts 6p each.</p>
         </div>
       </div>
     </div>
