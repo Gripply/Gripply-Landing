@@ -67,7 +67,7 @@
   <main id="main" class="legal-main">
     <div class="kicker">Legal</div>
     <h1>Privacy Policy</h1>
-    <p class="legal-updated">Last updated: 19 August 2026</p>
+    <p class="legal-updated">Last updated: 22 September 2026</p>
 
     <div class="prose">
       <p style="margin-top:28px;">Gripply Limited ("Gripply", "we", "us"), a company registered in England and Wales (company number 17169919), provides a business communications service for small businesses and tradespeople: a dedicated business phone number that handles calls, SMS and WhatsApp Business messages, captures and transcribes those conversations, and turns what was agreed into tracked actions. This policy explains what information we collect, how we use it, and the choices you have. It covers both this website (gripply.app) and the Gripply service and apps.</p>
@@ -84,6 +84,7 @@
       <p>When you create a Gripply account and use the service, we collect and process:</p>
       <ul>
         <li><strong>Account information</strong> — your name, email address, business name and sign-in credentials (managed by our authentication provider; we never see your password).</li>
+        <li><strong>Identity verification</strong> — UK regulations require a business phone number to be registered to an identified person, so when you set up your account we ask for a photo of your passport or driving licence. We pass the photo straight to Twilio, who provide your number and hold it as part of your registration with them. We do not store it, read what is on it, or send it anywhere else — all we keep is the reference Twilio gives us back.</li>
         <li><strong>Your business number and communications</strong> — calls to and from your Gripply number (including recordings and voicemails), SMS and WhatsApp Business messages, and the phone numbers involved. Recordings are transcribed so you can search and review them.</li>
         <li><strong>Content our software derives from your communications</strong> — transcripts, summaries, and extracted items such as appointments, requirements, callbacks and quotes. We use AI services to produce these; they are suggestions for you to review, not automated decisions with legal effect.</li>
         <li><strong>Contact details of the people you talk to</strong> — names and numbers of your clients, as captured from your communications or entered by you.</li>
@@ -122,7 +123,7 @@
       <h2>Who we share information with</h2>
       <p>We share information only with the service providers we need to run Gripply, and only for the purposes described above. For each, here is what they receive:</p>
       <ul>
-        <li><span class="partner">Twilio</span> — carries our calls, SMS and WhatsApp Business messages and provides your business number. Receives the phone numbers involved, call audio, and message content.</li>
+        <li><span class="partner">Twilio</span> — carries our calls, SMS and WhatsApp Business messages and provides your business number. Receives the phone numbers involved, call audio, and message content. Also receives the photo of your passport or driving licence, which it needs to register your number to you.</li>
         <li><span class="partner">Meta (WhatsApp)</span> — if you connect WhatsApp Business, messages on that channel are delivered through WhatsApp's Business Platform and Meta processes them under its own terms and privacy policy. When you authorize the connection, we receive from Meta the identifiers needed to link your WhatsApp Business Account (such as your WhatsApp Business Account ID and business display name) — we do not receive your Facebook profile, friends or posts.</li>
         <li><span class="partner">Deepgram</span> — transcribes call recordings and voicemails. Receives call audio.</li>
         <li><span class="partner">Anthropic</span> — provides the primary AI that summarises conversations and extracts action items. Receives transcripts and message text.</li>
@@ -139,12 +140,14 @@
 
       <h2>International transfers</h2>
       <p>Some of the providers above process data outside the UK and the European Economic Area, including in the United States. Where required, we rely on lawful transfer mechanisms for those transfers — for transfers from the UK, the UK International Data Transfer Agreement (IDTA) or the UK Addendum to the EU Standard Contractual Clauses; for transfers from the EEA, the EU Standard Contractual Clauses — or an applicable adequacy decision (such as the UK–US and EU–US Data Privacy Frameworks, for providers certified under them).</p>
+      <p>Twilio is based in the United States, so your identity document leaves the UK when we pass it to them. Twilio is certified under the UK–US Data Privacy Framework, which is what that transfer relies on.</p>
 
       <h2>How long we keep information</h2>
       <ul>
         <li><strong>Waitlist emails</strong> — until you unsubscribe or ask us to delete them.</li>
         <li><strong>Communications data</strong> (recordings, voicemails, transcripts, messages and items derived from them) — for as long as your account is active, so your client history stays available to you.</li>
         <li><strong>Account information</strong> — for as long as your account is active, and briefly afterwards to handle closure.</li>
+        <li><strong>Identity document</strong> — held by Twilio while your number is registered to you, and deleted when you delete your account. If we could not verify you and you do not try again, we delete it 30 days after your check was refused.</li>
         <li><strong>Billing and payment records</strong> — for as long as tax and accounting law requires after the transaction.</li>
         <li><strong>Support requests</strong> — for up to two years after resolution, so we have context if an issue recurs.</li>
         <li><strong>Website analytics</strong> — per Google Analytics' retention settings, then deleted or aggregated.</li>
