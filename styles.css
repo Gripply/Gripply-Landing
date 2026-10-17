@@ -689,7 +689,7 @@ input, button, textarea, select { box-sizing: border-box; font-family: inherit; 
   margin: 0;
 }
 
-/* ===== privacy page ===== */
+/* ===== legal pages (privacy, terms, complaints) ===== */
 
 .legal-main {
   max-width: 820px;
@@ -728,6 +728,17 @@ input, button, textarea, select { box-sizing: border-box; font-family: inherit; 
 .prose a { color: var(--accent); text-decoration: none; }
 .prose a:hover { text-decoration: underline; }
 .prose .partner { color: var(--text); font-weight: 600; }
+.prose ol { margin: 0 0 14px; padding-left: 22px; }
+.prose code {
+  font-family: 'Space Mono', monospace; font-size: 13px;
+  color: #cfcfd4; background: var(--card-el); padding: 2px 6px; border-radius: 6px;
+}
+.prose blockquote {
+  margin: 0 0 14px; padding: 14px 18px;
+  background: var(--card); border-left: 2px solid var(--accent); border-radius: 0 10px 10px 0;
+}
+.prose blockquote p { margin: 0; }
+.prose .legal-colophon { margin-top: 44px; font-size: 13.5px; color: var(--dim); }
 
 /* ===== consent banner ===== */
 
