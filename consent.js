@@ -1,7 +1,7 @@
 // Gripply landing — cookie consent + gated Google Analytics loader.
 // GA never loads until the visitor accepts; declining persists and keeps
 // the site fully functional. Choice is stored in localStorage.
-// Referenced as /consent.js?v=N — bump N in all three pages when editing
+// Referenced as /consent.js?v=N — bump N in every page when editing
 // this file (netlify.toml serves it with immutable caching).
 (function () {
   'use strict';

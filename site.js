@@ -1,5 +1,5 @@
 // Gripply landing — waitlist forms + mobile menu.
-// Referenced as /site.js?v=N — bump N in all three pages when editing
+// Referenced as /site.js?v=N — bump N in every page when editing
 // this file (netlify.toml serves it with immutable caching).
 (function () {
   'use strict';
