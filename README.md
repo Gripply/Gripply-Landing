@@ -48,4 +48,4 @@ The site describes what Gripply does, so when the product changes, check:
 
 - the hero and meta descriptions on `index.html`, and the channel chips;
 - the feature cards on both pages and the FAQ;
-- `privacy.html` and `terms.html`, which name the channels and third parties (Twilio, Meta for WhatsApp, Instagram and Messenger, Deepgram, Anthropic, OpenAI, Stripe, Auth0).
+- `privacy.html` and `terms.html`, which name the channels and every third party that handles data (the `.partner` list in `privacy.html`: Twilio, Meta, Deepgram, Anthropic, OpenAI, Stripe, Auth0, AWS, Expo, Netlify, Kit, Google Analytics).
