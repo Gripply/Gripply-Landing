@@ -111,6 +111,7 @@
 html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;   /* no blue flash on tapping a link or button anywhere (owner's decision); inherited */
 }
 
 /* In-page links and keyboard focus land clear of the sticky top bar: 8px below it, so a
@@ -378,7 +379,6 @@ input, button, textarea, select { font-family: inherit; }
   top: 0;
   z-index: 50;
   color: var(--on-dark);
-  -webkit-tap-highlight-color: transparent;   /* no blue flash on tapping the logo, menu button or menu links (owner's decision) */
 }
 .topbar__inner {
   display: grid;
