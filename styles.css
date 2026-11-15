@@ -956,7 +956,7 @@ input, button, textarea, select { font-family: inherit; }
   margin-top: 24px;
   padding-top: 24px;
   border-top: 1px solid var(--on-dark-line);
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.6;
   color: var(--on-dark-muted);
 }
