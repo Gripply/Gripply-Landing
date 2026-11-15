@@ -20,7 +20,7 @@ The app appears as a phone mock-up drawn in HTML and CSS (`.phone-mock`), in two
 ## Files
 
 - `styles.css` — all styling, in the "Bold minimal" design: black, white, greys and one lime accent (`#a3e635`; labels use the darker `#3f6212`), Epilogue headings, Inter body, the wordmark in Space Grotesk, hairlines instead of cards. Light only; the dark values are kept in a comment for later. Design tokens are CSS variables on `:root`, and the contents list at the top of the file gives its sections (tokens, base, shared components, then each page). Shared pieces include the sticky black top bar (`.topbar`, with the phone menu `.nav-menu`), label chips (`.chip`), outlined numerals (`.numeral`), hairline rows (`.row`), the waitlist form (`.waitlist`), the phone mock-up and the black footer.
-- `site.js` — waitlist form submission (posts to the Netlify function), and closing the phone menu (a `<details>` element) on a link tap or Escape.
+- `site.js` — waitlist form submission (posts to the Netlify function), and the phone menu (a `<details>` element): it slides the panel in and back out, and closes it on a link tap or Escape.
 - `consent.js` — cookie banner and gated Google Analytics loader. GA only loads after the visitor accepts; the choice is kept in `localStorage`.
 - `netlify/functions/subscribe.js` — serverless function that upserts the email into Kit (ConvertKit) and adds it to the waitlist form. Needs `KIT_API_KEY` and `KIT_FORM_ID` in the Netlify environment.
 - `img/` — the five home hero photographs (WebP, in colour; the CSS shows them in black and white).

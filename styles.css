@@ -371,13 +371,14 @@ input, button, textarea, select { font-family: inherit; }
    a solid near-black bar that stays at the top of the window,
    full width with 20px sides, white links centred, no button (the owner removed it).
    Phone (below 720px): logo and a menu button; the links open in a full-screen panel
-   (<details class="nav-menu">, which site.js closes on a link tap or Escape). */
+   (<details class="nav-menu">; site.js slides it open and shut, and closes it on a link tap or Escape). */
 
 .topbar {
   position: sticky;
   top: 0;
   z-index: 50;
   color: var(--on-dark);
+  -webkit-tap-highlight-color: transparent;   /* no blue flash on tapping the logo, menu button or menu links (owner's decision) */
 }
 .topbar__inner {
   display: grid;
@@ -436,12 +437,15 @@ input, button, textarea, select { font-family: inherit; }
 .nav-menu__bars span:nth-child(1) { top: 0; }
 .nav-menu__bars span:nth-child(2) { top: 6px; }
 .nav-menu__bars span:nth-child(3) { top: 12px; }
-.nav-menu[open] .nav-menu__bars span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
-.nav-menu[open] .nav-menu__bars span:nth-child(2) { opacity: 0; }
-.nav-menu[open] .nav-menu__bars span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
-/* Open: a full-screen black panel that slides in from the right (owner's decision during the build).
-   It sits behind the bar's own logo and close button (z-index -1 inside the bar), so those stay usable.
-   No JavaScript: the slide is a CSS animation that runs when <details> opens; closing is instant. */
+.nav-menu[open]:not(.nav-menu--closing) .nav-menu__bars span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.nav-menu[open]:not(.nav-menu--closing) .nav-menu__bars span:nth-child(2) { opacity: 0; }
+.nav-menu[open]:not(.nav-menu--closing) .nav-menu__bars span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+/* Open: a full-screen black panel that slides in from the right, and back out when it closes
+   (owner's decisions). It sits behind the bar's own logo and close button (z-index -1 inside the
+   bar), so those stay usable. site.js runs both slides and marks the menu .nav-menu--scripted
+   (and .nav-menu--closing while it slides out); see the comment there for why CSS can't.
+   Without the script this CSS slide-in runs (in Chrome, on the first open only) and closing
+   is instant. */
 .nav-menu__panel {
   position: fixed;
   inset: 0;
@@ -453,14 +457,14 @@ input, button, textarea, select { font-family: inherit; }
   padding: calc(var(--topbar-h) + 16px) min(20px, 6.25vw) 32px;
   background: var(--panel);
 }
-.nav-menu[open] .nav-menu__panel { animation: nav-menu-in 0.32s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.nav-menu[open]:not(.nav-menu--scripted) .nav-menu__panel { animation: nav-menu-in 0.32s cubic-bezier(0.2, 0.8, 0.2, 1); }
 @keyframes nav-menu-in {
   from { transform: translateX(100%); }
   to   { transform: translateX(0); }
 }
 @media (prefers-reduced-motion: reduce) {
   .nav-menu__bars span { transition: none; }
-  .nav-menu[open] .nav-menu__panel { animation: none; }
+  .nav-menu[open]:not(.nav-menu--scripted) .nav-menu__panel { animation: none; }
 }
 .nav-menu__link {
   display: flex;
@@ -481,18 +485,19 @@ input, button, textarea, select { font-family: inherit; }
 
 /* The page behind the open menu does not scroll, and once the panel has slid over it (0.32s)
    it is hidden, with the skip link: Tab past the last menu link then leaves the page instead of
-   landing on links the panel covers, and nothing scrolls the page behind to show them.
+   landing on links the panel covers, and nothing scrolls the page behind to show them. It shows
+   again as soon as the panel starts sliding out (.nav-menu--closing), so the slide uncovers it.
    "not (min-width: 720px)" rather than max-width: 719px, so a zoomed 719.2px-wide viewport
    (menu button showing) is covered too. */
 @media not all and (min-width: 720px) {
   body:has(.nav-menu[open]) { overflow: hidden; }
-  body:has(.nav-menu[open]) :is(.skip-link, main, .footer) {
+  body:has(.nav-menu[open]:not(.nav-menu--closing)) :is(.skip-link, main, .footer) {
     visibility: hidden;
     transition: visibility 0s 0.32s;
   }
 }
 @media (prefers-reduced-motion: reduce) {
-  body:has(.nav-menu[open]) :is(.skip-link, main, .footer) { transition: none; }   /* no slide to wait for */
+  body:has(.nav-menu[open]:not(.nav-menu--closing)) :is(.skip-link, main, .footer) { transition: none; }   /* no slide to wait for */
 }
 
 @media (min-width: 720px) {
