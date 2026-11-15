@@ -2,32 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://gripply.app/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-11-15</lastmod>
   </url>
   <url>
     <loc>https://gripply.app/features</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-11-15</lastmod>
   </url>
   <url>
     <loc>https://gripply.app/faq</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2026-11-15</lastmod>
   </url>
   <url>
     <loc>https://gripply.app/privacy</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <lastmod>2026-11-15</lastmod>
   </url>
   <url>
     <loc>https://gripply.app/terms</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <lastmod>2026-11-15</lastmod>
   </url>
   <url>
     <loc>https://gripply.app/complaints</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <lastmod>2026-11-15</lastmod>
   </url>
 </urlset>

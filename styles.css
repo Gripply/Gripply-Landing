@@ -1,6 +1,6 @@
 /* Gripply landing — shared stylesheet for every page ("Bold minimal").
-   Referenced as /styles.css?v=N — bump N in all six pages when editing
-   this file (netlify.toml serves it with immutable caching).
+   Referenced as /styles.css?v=N — bump N in all six pages and 404.html when
+   editing this file (netlify.toml serves it with immutable caching).
 
    Contents
      1. Design tokens
@@ -12,7 +12,7 @@
           footer · cookie banner
      4. Home page — index.html
      5. Features page — features.html
-     6. Legal pages — privacy.html, terms.html, complaints.html
+     6. Legal pages — privacy.html, terms.html, complaints.html (and 404.html)
      7. FAQ page — faq.html
 
    Written mobile-first. Breakpoints (min-width): 720px tablet,
@@ -1653,6 +1653,19 @@ input, button, textarea, select { font-family: inherit; }
   .legal__text { grid-column: 2; }
   .legal__section h2 + .legal__text { margin-top: 0; }
 }
+
+/* ----- the 404 page (404.html) -----
+   It has the legal pages' shape but a single short row, so on a tall screen the
+   page would end above the bottom edge: its main grows instead, keeping the
+   footer at the foot of the screen. */
+
+.page-404 {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100svh;
+}
+.page-404 > main { flex: 1 0 auto; }
 
 /* ==========================================================================
    7. FAQ PAGE — faq.html

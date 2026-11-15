@@ -1,0 +1,23 @@
+# Gripply
+
+> Gripply is a business communications service for small businesses and tradespeople, from Gripply Limited, a company registered in England and Wales. It gives a business one number for calls, SMS and WhatsApp Business, brings Instagram and Messenger DMs into the same thread, records and transcribes calls, and turns what was agreed in each conversation into tracked to-dos, so nothing slips through. Early access is opening soon: join the waitlist at https://gripply.app/.
+
+Gripply is a paid subscription. Pricing will be shared as early access rolls out.
+
+To get a Gripply number, Gripply checks your ID and address and assigns a dedicated business number for calls and SMS. The check is usually done the same day but can take up to 72 hours. WhatsApp Business is switched on from the app, and Instagram and Messenger DMs arrive once a Facebook Page is connected.
+
+Features: missed-call text-back, captured commitments, one timeline per customer, calls recorded, transcribed and summarised, a smart diary, an AI daily brief, quotes customers accept from a link, invoices with payment by bank transfer or by card, Tap to Pay on Android (Android phones with NFC running Android 13 or later, once card payments are set up) and the Jobs tab.
+
+Gripply Limited, company number 17169919, registered office 66 Paul Street, London EC2A 4NA, United Kingdom.
+
+## Pages
+
+- [Home](https://gripply.app/): What Gripply does, how it works in three steps, and the early-access waitlist.
+- [Features](https://gripply.app/features): The full tour: missed-call text-back, captured commitments, one timeline, smart diary, AI daily brief, quotes, getting paid, Tap to Pay and the Jobs tab, plus the extras.
+- [FAQ](https://gripply.app/faq): What number you get and how fast, WhatsApp Business, Instagram and Facebook Messenger, how accurately Gripply pulls out tasks, and when pricing will be shared.
+
+## Optional
+
+- [Privacy Policy](https://gripply.app/privacy): How Gripply collects, uses and protects information on this website and in the Gripply service. Privacy and data requests: privacy@gripply.app.
+- [Terms of Use](https://gripply.app/terms): The terms for the Gripply website, waitlist and service.
+- [Complaints Code of Practice](https://gripply.app/complaints): How to complain about Gripply and where to take it next, including the Communications Ombudsman, an ADR scheme approved by Ofcom. Complaints: complaints@gripply.app.

@@ -62,3 +62,43 @@
   for = "/og-image.png"
   [headers.values]
     Cache-Control = "public, max-age=86400"
+
+# The icons: fixed URLs with no ?v= (Google wants a stable favicon URL), so a week's cache, not immutable:
+# a replaced icon reaches returning visitors within a week.
+[[headers]]
+  for = "/favicon.ico"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/favicon.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/apple-touch-icon.png"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/icon-192.png"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/icon-512.png"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# The web app manifest, with its registered media type, and a day's cache.
+[[headers]]
+  for = "/site.webmanifest"
+  [headers.values]
+    Content-Type = "application/manifest+json"
+    Cache-Control = "public, max-age=86400"
+
+# The site summary for AI tools (llmstxt.org): UTF-8 plain text.
+[[headers]]
+  for = "/llms.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
