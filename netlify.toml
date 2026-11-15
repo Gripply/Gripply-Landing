@@ -27,6 +27,21 @@
   to = "/complaints.html"
   status = 200
 
+# Files in the repo that are not part of the site: Netlify publishes the whole repo root, so without these
+# the README and the waitlist function's source would be served as pages. force = true answers 404 even though
+# the files exist. (The function itself runs at /.netlify/functions/subscribe, which this does not touch.)
+[[redirects]]
+  from = "/README.md"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/netlify/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]
