@@ -48,7 +48,7 @@ Then open `http://localhost:8765/index.html`. A plain static server doesn't appl
 
 ## Deployment
 
-Netlify builds from `main`: `publish = "."`, functions from `netlify/functions`. Security headers and caching rules are in `netlify.toml`. Because the whole repo root is published, `netlify.toml` answers 404 for `/README.md` and `/netlify/*` so this file and the function's source aren't served as pages; add a rule there for any other file you put in the repo that isn't part of the site.
+Netlify builds from `main`: `publish = "."`, functions from `netlify/functions`. Security headers and caching rules are in `netlify.toml`. Because the whole repo root is published, anything put in the repo is served as a page unless Netlify skips it: this README lives in `.github/` (Netlify does not publish folders whose names start with a dot, and GitHub still shows it on the repo page), and `netlify.toml` answers `/netlify/*` with the 404 page. Keep any other file that isn't part of the site in a dot-folder too.
 
 ## Search and AI metadata
 
