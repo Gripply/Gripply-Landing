@@ -1227,25 +1227,30 @@ input, button, textarea, select { font-family: inherit; }
 }
 
 /* ----- the video: "Gripply in under a minute" ----- */
-/* A "Watch" chip over a 16:9 <video> (made from .video/, the source isn't published): a plain
-   player that never starts by itself and loads nothing until it's played. On a phone it runs
-   edge to edge; from 720px it's 720px wide, centred, with the chip over its left edge. */
+/* A "Watch" chip over a plain <video> player that never starts by itself and loads nothing until
+   it's played. There are two cuts of the one video (made with the promo-video skill in the Gripply
+   app repo) and only one shows: on a phone the portrait cut, edge to edge where the screen is tall
+   enough and otherwise as wide as keeps all of it in view; from 720px the 16:9 cut, 720px wide,
+   centred, with the chip over its left edge. */
 
 .watch__player {
-  aspect-ratio: 16 / 9;
   margin-top: var(--gap-chip);   /* the chip labels the video as it would a heading */
   margin-inline: calc(-1 * var(--gutter));
-  background: var(--panel);
 }
-.watch__video {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: var(--panel);
+.watch__video { display: block; background: var(--panel); }
+.watch__video--wide { display: none; }
+.watch__video--tall {
+  width: min(100%, calc(90vh * 9 / 16));
+  width: min(100%, calc(90svh * 9 / 16));   /* the whole video, controls included, fits on screen */
+  height: auto;
+  aspect-ratio: 9 / 16;
+  margin-inline: auto;
 }
 @media (min-width: 720px) {
   /* centred at the site's 720px measure (as .section-head and .hero__sub), not the full container */
-  .watch__player { max-width: 720px; margin-inline: auto; border-radius: var(--radius); overflow: hidden; }
+  .watch__player { aspect-ratio: 16 / 9; max-width: 720px; margin-inline: auto; border-radius: var(--radius); overflow: hidden; background: var(--panel); }
+  .watch__video--tall { display: none; }
+  .watch__video--wide { display: block; width: 100%; height: 100%; }
   .watch .section-head { margin-inline: auto; }   /* also 720px: the chip sits over the player's left edge */
 }
 

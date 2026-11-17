@@ -66,8 +66,8 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# The home page video, its poster and its captions: index.html references them with ?v=N too
-# (in the page and in its structured data) — bump it on all three when the video is re-cut.
+# The home page video (16:9, and the portrait cut phones get), posters and captions: index.html
+# references them with ?v=N too (in the page and in its structured data) — bump it when the video is re-cut.
 [[headers]]
   for = "/video/*"
   [headers.values]
@@ -75,6 +75,11 @@
 
 [[headers]]
   for = "/video/gripply-summary.vtt"
+  [headers.values]
+    Content-Type = "text/vtt; charset=utf-8"
+
+[[headers]]
+  for = "/video/gripply-summary-portrait.vtt"
   [headers.values]
     Content-Type = "text/vtt; charset=utf-8"
 
