@@ -1,0 +1,65 @@
+{
+ "say": "Miss the call, and Gripply texts them back for you. Job saved!",
+ "words": [
+  {
+   "w": "Miss",
+   "start": 0,
+   "end": 0.16
+  },
+  {
+   "w": "the",
+   "start": 0.18,
+   "end": 0.24
+  },
+  {
+   "w": "call,",
+   "start": 0.336,
+   "end": 1.04
+  },
+  {
+   "w": "and",
+   "start": 1.08,
+   "end": 1.2
+  },
+  {
+   "w": "Gripply",
+   "start": 1.24,
+   "end": 1.68
+  },
+  {
+   "w": "texts",
+   "start": 1.76,
+   "end": 2.16
+  },
+  {
+   "w": "them",
+   "start": 2.176,
+   "end": 2.24
+  },
+  {
+   "w": "back",
+   "start": 2.304,
+   "end": 2.56
+  },
+  {
+   "w": "for",
+   "start": 2.62,
+   "end": 2.8
+  },
+  {
+   "w": "you.",
+   "start": 2.86,
+   "end": 3.4
+  },
+  {
+   "w": "Job",
+   "start": 3.49,
+   "end": 3.76
+  },
+  {
+   "w": "saved!",
+   "start": 3.853,
+   "end": 4.48
+  }
+ ]
+}

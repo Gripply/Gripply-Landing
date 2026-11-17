@@ -1,0 +1,30 @@
+{
+ "say": "Gripply. More jobs... less admin.",
+ "words": [
+  {
+   "w": "Gripply.",
+   "start": 0,
+   "end": 0.64
+  },
+  {
+   "w": "More",
+   "start": 0.784,
+   "end": 1.36
+  },
+  {
+   "w": "jobs...",
+   "start": 1.472,
+   "end": 2.24
+  },
+  {
+   "w": "less",
+   "start": 2.304,
+   "end": 2.56
+  },
+  {
+   "w": "admin.",
+   "start": 2.64,
+   "end": 3.2
+  }
+ ]
+}

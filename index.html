@@ -122,6 +122,23 @@
         }
       },
       {
+        "@type": "VideoObject",
+        "@id": "https://gripply.app/#video",
+        "name": "Gripply in under a minute",
+        "description": "A short video of what Gripply does: missed-call text-back, every channel in one thread, what you agree becoming a to-do, visits booked in the diary, quotes, invoices and getting paid, and the daily brief.",
+        "thumbnailUrl": "https://gripply.app/video/gripply-summary-poster.jpg?v=1",
+        "contentUrl": "https://gripply.app/video/gripply-summary.mp4?v=1",
+        "uploadDate": "2026-11-17",
+        "duration": "PT37S",
+        "inLanguage": "en-GB",
+        "about": {
+          "@id": "https://gripply.app/#app"
+        },
+        "publisher": {
+          "@id": "https://gripply.app/#organization"
+        }
+      },
+      {
         "@type": "WebPage",
         "@id": "https://gripply.app/",
         "url": "https://gripply.app/",
@@ -136,7 +153,10 @@
         "publisher": {
           "@id": "https://gripply.app/#organization"
         },
-        "inLanguage": "en-GB"
+        "inLanguage": "en-GB",
+        "video": {
+          "@id": "https://gripply.app/#video"
+        }
       }
     ]
   }
@@ -145,7 +165,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=12">
+  <link rel="stylesheet" href="/styles.css?v=13">
   <script src="/consent.js?v=1" defer></script>
   <script src="/site.js?v=3" defer></script>
 </head>
@@ -224,6 +244,25 @@
         <li class="channels__item">Instagram</li>
         <li class="channels__item">Messenger</li>
       </ul>
+    </div>
+  </section>
+
+  <!-- ===================== THE VIDEO ===================== -->
+  <!-- The summary video, made from .video/ (see its README). /video/* is served immutable (netlify.toml):
+       when the video is re-cut, bump ?v=N on all three files here and in the structured data. -->
+  <section id="watch" class="section section--alt watch">
+    <div class="container">
+      <div class="section-head">
+        <p class="chip">Watch</p>
+      </div>
+      <div class="watch__player">
+        <video class="watch__video" controls playsinline preload="none" width="1920" height="1080"
+          poster="/video/gripply-summary-poster.jpg?v=1"
+          aria-label="Gripply in under a minute: a short video, with narration and music">
+          <source src="/video/gripply-summary.mp4?v=1" type="video/mp4">
+          <track kind="captions" src="/video/gripply-summary.vtt?v=1" srclang="en" label="English">
+        </video>
+      </div>
     </div>
   </section>
 

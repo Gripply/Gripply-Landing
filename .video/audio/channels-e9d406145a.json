@@ -1,0 +1,55 @@
+{
+ "say": "Calls, texts, WhatsApp, Instagram and Messenger... all in one thread.",
+ "words": [
+  {
+   "w": "Calls,",
+   "start": 0,
+   "end": 0.64
+  },
+  {
+   "w": "texts,",
+   "start": 0.747,
+   "end": 1.44
+  },
+  {
+   "w": "WhatsApp,",
+   "start": 1.502,
+   "end": 2.16
+  },
+  {
+   "w": "Instagram",
+   "start": 2.224,
+   "end": 2.8
+  },
+  {
+   "w": "and",
+   "start": 2.9,
+   "end": 3.2
+  },
+  {
+   "w": "Messenger...",
+   "start": 3.256,
+   "end": 4.16
+  },
+  {
+   "w": "all",
+   "start": 4.26,
+   "end": 4.56
+  },
+  {
+   "w": "in",
+   "start": 4.64,
+   "end": 4.8
+  },
+  {
+   "w": "one",
+   "start": 4.86,
+   "end": 5.04
+  },
+  {
+   "w": "thread.",
+   "start": 5.097,
+   "end": 5.84
+  }
+ ]
+}

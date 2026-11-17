@@ -14,7 +14,7 @@ Gripply Limited, company number 17169919, registered office 66 Paul Street, Lond
 
 ## Pages
 
-- [Home](https://gripply.app/): What Gripply does, how it works in three steps, and the early-access waitlist.
+- [Home](https://gripply.app/): What Gripply does, a short narrated video of it, how it works in three steps, and the early-access waitlist.
 - [Features](https://gripply.app/features): The full tour: missed-call text-back, captured commitments, one timeline, smart diary, AI daily brief, quotes, getting paid, Tap to Pay and the Jobs tab, plus the extras.
 - [FAQ](https://gripply.app/faq): Who Gripply is for, the UK mobile number you get and how fast, keeping your existing number, iPhone and Android, WhatsApp Business, Instagram and Facebook Messenger, the call recording notice, how accurately Gripply pulls out tasks, how it differs from a second SIM or the WhatsApp Business app, pricing and cancelling.
 

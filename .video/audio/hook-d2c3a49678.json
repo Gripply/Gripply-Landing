@@ -1,0 +1,40 @@
+{
+ "say": "Hands full, and the phone's ringing... again?",
+ "words": [
+  {
+   "w": "Hands",
+   "start": 0,
+   "end": 0.32
+  },
+  {
+   "w": "full,",
+   "start": 0.4,
+   "end": 0.8
+  },
+  {
+   "w": "and",
+   "start": 0.94,
+   "end": 1.36
+  },
+  {
+   "w": "the",
+   "start": 1.38,
+   "end": 1.44
+  },
+  {
+   "w": "phone's",
+   "start": 1.493,
+   "end": 1.84
+  },
+  {
+   "w": "ringing...",
+   "start": 1.9,
+   "end": 3.36
+  },
+  {
+   "w": "again?",
+   "start": 3.467,
+   "end": 4.16
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+  "comment": "The narration, one line per scene, in the order they play. stage.js draws each scene; voice.mjs speaks each line in the house voice (Gripply Voiceover Female, the same voice as the app's tours) and saves the words' timings, so the animation lands on the words. A line's 'gap' is the quiet after it, before the next scene's first word.",
+  "voice": {
+    "name": "Gripply Voiceover Female",
+    "voiceId": "MOu9IHWLjP7ykBStBDhR",
+    "model": "eleven_v3"
+  },
+  "intro": 0.5,
+  "outro": 3,
+  "lines": [
+    { "scene": "hook", "say": "Hands full, and the phone's ringing... again?", "gap": 0.45 },
+    { "scene": "textback", "say": "Miss the call, and Gripply texts them back for you. Job saved!", "gap": 0.5 },
+    { "scene": "channels", "say": "Calls, texts, WhatsApp, Instagram and Messenger... all in one thread.", "gap": 0.5 },
+    { "scene": "todo", "say": "Whatever you agree becomes a to-do.", "gap": 0.45 },
+    { "scene": "diary", "say": "Settle on a time, and it's in the diary.", "gap": 0.45 },
+    { "scene": "money", "say": "Then quote it, bill it, and get paid, all from your phone.", "speak": "Then kwote it, bill it, and get paid, all from your phone.", "gap": 0.5 },
+    { "scene": "brief", "say": "And every morning, a brief of who to ring back and what to chase.", "gap": 0.6 },
+    { "scene": "end", "say": "Gripply. More jobs... less admin.", "gap": 0 }
+  ],
+  "music": {
+    "comment": "audio/music.mp3 (Eleven Music, made through Runway). 'groove' and 'finale' are where, in the file, the full groove and the final hit land; the mix stretches the track (pitch kept) so they fall on the first scene change and the end card, whatever the narration's length.",
+    "file": "audio/music.mp3",
+    "groove": 7.1,
+    "finale": 31.05,
+    "beat": 0.5
+  }
+}
