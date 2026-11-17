@@ -43,7 +43,7 @@
         btn.disabled = false;
         btn.innerHTML = original;
         if (errorEl) {
-          errorEl.textContent = 'Something went wrong — please try again.';
+          errorEl.textContent = 'Something went wrong - please try again.';
           errorEl.hidden = false;
         }
       });

@@ -23,7 +23,7 @@ exports.handler = async (event) => {
   const formId = process.env.KIT_FORM_ID;
   if (!apiKey || !formId) {
     console.error('subscribe: KIT_API_KEY / KIT_FORM_ID not configured');
-    return { statusCode: 502, body: JSON.stringify({ error: 'Subscription failed — please try again.' }) };
+    return { statusCode: 502, body: JSON.stringify({ error: 'Subscription failed - please try again.' }) };
   }
 
   // Step 1: Create/upsert the subscriber, get back their ID
@@ -35,7 +35,7 @@ exports.handler = async (event) => {
 
   if (!createRes.ok) {
     console.error('subscribe: Kit create failed', createRes.status, await createRes.text());
-    return { statusCode: 502, body: JSON.stringify({ error: 'Subscription failed — please try again.' }) };
+    return { statusCode: 502, body: JSON.stringify({ error: 'Subscription failed - please try again.' }) };
   }
 
   const { subscriber } = await createRes.json();
@@ -52,7 +52,7 @@ exports.handler = async (event) => {
 
   if (!addRes.ok) {
     console.error('subscribe: Kit form add failed', addRes.status, await addRes.text());
-    return { statusCode: 502, body: JSON.stringify({ error: 'Subscription failed — please try again.' }) };
+    return { statusCode: 502, body: JSON.stringify({ error: 'Subscription failed - please try again.' }) };
   }
 
   return { statusCode: 200, body: JSON.stringify({ success: true }) };
